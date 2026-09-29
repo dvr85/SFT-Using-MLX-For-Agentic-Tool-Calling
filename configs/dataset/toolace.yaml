@@ -1,0 +1,7 @@
+name: "Team-ACE/ToolACE"
+train_split: "train"
+text_column: "conversations" # List of {from, value} turns
+system_column: "system" # Tool defs; prepended as system turn
+max_samples: 2000
+test_split_ratio: 0.2
+format: "messages" # mlx-lm ChatDataset: {"messages": [{role, content}]}

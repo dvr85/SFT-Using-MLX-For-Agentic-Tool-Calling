@@ -1,0 +1,15 @@
+output_dir: ./models/sft-minicpm5-1b-adapters
+num_train_epochs: 2
+batch_size: 2
+val_batches: 5
+learning_rate: 0.00001
+lr_schedule: cosine_decay
+warmup_ratio: 0.1 # warmup_steps = ratio * iters
+optimizer: adamw
+steps_per_report: 10
+steps_per_eval: 200
+test_batches: -1 # -1 = whole test.jsonl for mlx-lm --test perplexity
+save_every: 200
+grad_checkpoint: true
+grad_accumulation_steps: 2
+seed: 42

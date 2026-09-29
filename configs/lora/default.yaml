@@ -1,0 +1,7 @@
+enabled: true
+fine_tune_type: "dora" # lora | dora | full
+r: 8
+scale: 16.0 # lora scaling; ~= 2 * r
+dropout: 0.0
+num_layers: 8 # last N blocks adapted; drop to 4 on OOM
+keys: ["self_attn.q_proj", "self_attn.k_proj", "self_attn.v_proj", "self_attn.o_proj"]

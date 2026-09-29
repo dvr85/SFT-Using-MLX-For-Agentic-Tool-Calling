@@ -1,0 +1,10 @@
+# MLX conversion of openbmb/MiniCPM5-1B (post-RL/OPD final, BF16)
+# Convert first: mlx_lm.convert --hf-path openbmb/MiniCPM5-1B --mlx-path models/minicpm5-1b-bf16 --dtype bfloat16
+# Then copy chat template from HF repo (already included in conversion).
+# Arch snapshot lives in minicpm5-1b.config.json (point-in-time download from the
+# HF model card, revision below). Do not hand-edit values here; re-download to refresh.
+name: "models/minicpm5-1b-bf16"
+hf_repo: "openbmb/MiniCPM5-1B"
+revision: "main"
+trust_remote_code: false
+config_file: "minicpm5-1b.config.json"

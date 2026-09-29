@@ -1,0 +1,8 @@
+defaults:
+  - model: minicpm5-1b
+  - dataset: toolace
+  - tokenizer: default
+  - lora: default
+  - training: default
+  - mlflow: default
+  - _self_

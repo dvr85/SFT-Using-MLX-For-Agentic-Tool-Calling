@@ -1,0 +1,5 @@
+tracking_uri: "http://127.0.0.1:5000"
+experiment_name: "sft-mlx-agentic-tool-calling"
+run_name_prefix: "sft-mlx-dora"
+artifact_location: "./mlartifacts"
+model_name: "sft-minicpm5-tool-call-model"

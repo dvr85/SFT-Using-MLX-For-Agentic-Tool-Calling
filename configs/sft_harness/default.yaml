@@ -1,0 +1,17 @@
+max_steps: 4
+# 1024: Think-mode reasoning + educative detail need budget (512 truncated before).
+max_tokens_per_turn: 1024
+temperature: 0.9
+top_p: 0.95
+enable_thinking: true
+model_url: "http://localhost:8080/v1"
+# Model id sent in the chat-completions body. Must match the --model path the
+# server was started with (serve_fused.sh <fused-dir>); the server resolves this
+# as a repo id, so a placeholder (e.g. "sft-harness") 404s on huggingface.co.
+model: "models/sft-minicpm5-1b-adapters/export/fused"
+request_timeout_s: 60
+tool_timeout_s: 15
+allowlist:
+  - solve_symbolic
+  - plot_chart
+  - todo_write

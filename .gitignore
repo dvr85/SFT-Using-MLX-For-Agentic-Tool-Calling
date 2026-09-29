@@ -1,0 +1,34 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Model weights and config (regenerated via scripts/convert_minicpm5_1b.sh)
+models/
+
+# Training outputs
+lora.yaml
+adapter_config.json
+
+# Local MLflow tracking (SQLite + file store)
+mlflow.db
+mlartifacts/
+
+# Hydra run logs
+outputs/
+
+# Rust build artifacts
+sft_harness/target/
+
+# Harness session traces
+traces/
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
